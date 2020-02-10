@@ -7,6 +7,8 @@
     "node": "^12.13.1"
   },
   "scripts": {
+    "start": "node build/server.js",
+    "start:client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm install && npm run build"
@@ -22,7 +24,12 @@
   },
   "homepage": "https://github.com/mike-4040/office-br#readme",
   "dependencies": {
+    "@types/node": "^13.7.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-flowtype": "^4.6.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.22"
   }
 }
