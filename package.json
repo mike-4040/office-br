@@ -7,11 +7,11 @@
     "node": "^12.13.1"
   },
   "scripts": {
-    "start": "node build/server.js",
+    "start": "nodemon build/server.js",
     "start:client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "tsc && cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
