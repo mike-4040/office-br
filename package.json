@@ -1,28 +1,34 @@
 {
-  "name": "office-br",
-  "version": "1.0.0",
-  "description": "Office Brunch",
-  "main": "server.js",
-  "engines": {
-    "node": "^12.13.1"
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mike-4040/office-br.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Mike Kravtsov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mike-4040/office-br/issues"
-  },
-  "homepage": "https://github.com/mike-4040/office-br#readme",
-  "dependencies": {
-    "eslint-plugin-flowtype": "^4.6.0",
-    "express": "^4.17.1"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
